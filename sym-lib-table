@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Double-Delay-rescue)(type Legacy)(uri "${KIPRJMOD}/Double Delay-rescue.lib")(options "")(descr ""))
+  (lib (name Dirty-Delay-rescue)(type Legacy)(uri "${KIPRJMOD}/Dirty Delay-rescue.lib")(options "")(descr ""))
+)
