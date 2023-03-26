@@ -1,47 +1,63 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# CP1_Small-Double-Delay-rescue
+# CP1_Small-Device
 #
-DEF CP1_Small-Double-Delay-rescue C 0 10 N N 1 F N
+DEF CP1_Small-Device C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "CP1_Small-Double-Delay-rescue" 10 -80 50 H V L CNN
-F2 "" 0 0 50 H V C CNN
-F3 "" 0 0 50 H V C CNN
+F1 "CP1_Small-Device" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
 $FPLIST
- CP*
- C_Axial*
- C_Radial*
- TantalC*
- C*elec
- c_elec*
- SMD*_Pol
+ CP_*
 $ENDFPLIST
 DRAW
-A 0 -140 125 1186 614 0 1 12 N -60 -30 60 -30
 P 2 0 1 12 -60 20 60 20 N
 P 2 0 1 0 -50 60 -30 60 N
 P 2 0 1 0 -40 50 -40 70 N
+A 0 -140 125 614 1186 0 1 12 N 60 -30 -60 -30
 X ~ 1 0 100 80 D 50 50 1 1 P
 X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# LD1117S12CTR-Double-Delay-rescue
+# R_POT-Device
 #
-DEF LD1117S12CTR-Double-Delay-rescue U 0 30 Y Y 1 F N
-F0 "U" 0 250 50 H V C CNN
-F1 "LD1117S12CTR-Double-Delay-rescue" 0 200 50 H V C CNN
-F2 "SOT-223" 0 100 50 H V C CNN
-F3 "" 0 0 50 H V C CNN
+DEF R_POT-Device RV 0 40 Y N 1 F N
+F0 "RV" -175 0 50 V V C CNN
+F1 "R_POT-Device" -100 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
 $FPLIST
- SOT223
+ Potentiometer*
 $ENDFPLIST
 DRAW
-S -250 -150 250 150 0 1 10 f
-X GND 1 0 -250 100 U 50 50 1 1 W
-X VO 2 400 50 150 L 50 50 1 1 w
-X VI 3 -400 50 150 R 50 50 1 1 W
+P 2 0 1 0 100 0 60 0 N
+P 4 0 1 0 45 0 90 20 90 -20 45 0 F
+S 40 100 -40 -100 0 1 10 N
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 150 0 50 L 50 50 1 1 P
+X 3 3 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# R_POT_TRIM-Device
+#
+DEF R_POT_TRIM-Device RV 0 40 Y N 1 F N
+F0 "RV" -175 0 50 V V C CNN
+F1 "R_POT_TRIM-Device" -100 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Potentiometer*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 60 30 60 -30 N
+P 2 0 1 0 100 0 60 0 N
+S 40 100 -40 -100 0 1 10 N
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 150 0 50 L 50 50 1 1 P
+X 3 3 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
